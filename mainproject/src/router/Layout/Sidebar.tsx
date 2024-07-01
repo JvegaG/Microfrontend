@@ -34,10 +34,10 @@ export const Sidebar = () => {
                         {/* <a className={`nav-link ${pathname === '/withVue' ? 'active' : ''}`} href="/withVue">Vue</a> */}
                         <Link className={`nav-link text-body ${activeLink('/withSvelte')}`} to="/withSvelte">Svelte</Link>
                     </li>
-                    <li className="nav-item">
-                        {/* <a className={`nav-link ${pathname === '/withAngular' ? 'active' : ''}`} href="/withAngular">Angular</a> */}
-                        <Link className={`nav-link text-body ${activeLink('/withAngular')}`} to="/withAngular">Angular</Link>
-                    </li>
+                    {/* <li className="nav-item">
+                        <a className={`nav-link ${pathname === '/withAngular' ? 'active' : ''}`} href="/withAngular">Angular</a>
+                        <Link className={`nav-link text-body ${activeLink('/withAngular')}`} to="/withAngular" reloadDocument>Angular</Link>
+                    </li> */}
                 </ul>
             </div>
             <div className="offcanvas-footer text-center">
