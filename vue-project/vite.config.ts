@@ -5,13 +5,20 @@ import federation from '@originjs/vite-plugin-federation'
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [
-        vue(),
+        vue({
+            template: {
+                compilerOptions: {
+                    isCustomElement: tag => tag === 'vue-app'
+                }
+            }
+        }),
         federation({
             name: 'vue-project',
             filename: 'remoteEntry.js',
             // Modules to expose
             exposes: {
-                './App': './src/App.vue',
+                // './App': './src/App.vue',
+                './App': './src/main.ts',
             },
             shared: ['vue']
         })

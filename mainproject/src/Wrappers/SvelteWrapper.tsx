@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import App from 'svelte_project/App'
 // const SvelteProject = lazy(() => import("svelte_project/App" as any))
 
-export const SvelteContainer = () => {
+export const SvelteWrapper = () => {
     const containerRef = useRef(null);
 
     useEffect(() => {

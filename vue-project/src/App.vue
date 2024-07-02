@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
-const props = defineProps<{ onClick: () => void, count: number }>();
+// const props = defineProps<{ onClick: () => void, count: number }>();
 </script>
 
 <template>
@@ -12,7 +12,7 @@ const props = defineProps<{ onClick: () => void, count: number }>();
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" :onClick="props.onClick" :count="props.count"/>
+  <HelloWorld msg="Vite + Vue"/>
 </template>
 
 <style scoped>
