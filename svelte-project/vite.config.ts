@@ -19,7 +19,7 @@ export default defineConfig({
     build: {
         target: 'esnext',
         minify: false,
-        cssCodeSplit: false,
+        cssCodeSplit: true,
     },
     server: {
         port: 4174

@@ -1,12 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 defineProps<{ msg: string }>();
-// const props = defineProps<{ msg: string, onClick: () => void, count: number }>()
-// const countProp = reactive({ count: props.count ?? 0 })
-
-// const handleClick = () => {
-//   countProp.count += 1
-// }
 const count = ref(0)
 </script>
 
